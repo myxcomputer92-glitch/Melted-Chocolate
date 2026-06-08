@@ -30,12 +30,12 @@ useGSAP(()=>{
   }})
 
   const tl2=gsap.timeline({scrollTrigger:{
-    trigger:heading_ref.current,
+    trigger:Container_Ref.current,
     markers:true,
     start:'top top',
-    end:'+=200',
+    end:'+=800',
     scrub:true,
-    // pin:true
+    pin:true
   }})
 
   tl.to(heading_ref.current,{
@@ -44,13 +44,72 @@ useGSAP(()=>{
   })
 
 
-tl2.fromTo(Container_Ref.current,{
-  opacity:0,
+// tl2.fromTo(Container_Ref.current,{
+//   opacity:0,
+// },{
+//     opacity:1,
+//   duration:1,
+
+// })
+
+
+tl2.to('.svg-1',{
+    opacity:1,
   duration:1,
-},{
+})
+
+tl2.to('.h2-1-4',{
+    opacity:1,
+  duration:1,
+})
+
+tl2.to('.nd',{
     opacity:1,
   duration:1,
 
+})
+
+tl2.to('.svg-2',{
+    opacity:1,
+  duration:1,
+})
+
+tl2.to('.h2-2-4',{
+    opacity:1,
+  duration:1,
+})
+
+
+tl2.to('.rd',{
+    opacity:1,
+  duration:1,
+
+})
+
+tl2.to('.svg-3',{
+    opacity:1,
+  duration:1,
+})
+
+tl2.to('.h2-3-4',{
+    opacity:1,
+  duration:1,
+})
+
+tl2.to('.th',{
+    opacity:1,
+  duration:1,
+
+})
+
+tl2.to('.svg-4',{
+    opacity:1,
+  duration:1,
+})
+
+tl2.to('.h2-4-4',{
+    opacity:1,
+  duration:1,
 })
 
 
@@ -61,20 +120,20 @@ tl2.fromTo(Container_Ref.current,{
 
   return (
     <>
-    <div className='cont-3 w-full h-screen relative flex flex-col items-center bg-lime-300 text-white'>
-      <h1 ref={heading_ref} className='text-6xl transform translate-y-14 text-black font-medium opacity-0'>Feel The Melt </h1>
+    <div ref={Container_Ref} className='cont-3 w-full h-screen relative flex flex-col items-center bg-lime-300 text-white'>
+      <h1 ref={heading_ref} className='text-6xl transform translate-y-14 text-black font-medium opacity-0 relative z-10'>Feel The Melt </h1>
       
-      <div className="contain-multiple-images w-full h-screen flex items-center justify-center">
-<img className='w-48 h-94 transform rotate-45 absolute' src="/assets/images/bite.png" alt="" />
-<img ref={Container_Ref} className='w-48 h-94 transform rotate-45 absolute opacity-0' src="/assets/images/bite-1.png" alt="" />
-<img ref={Container_Ref} className='w-48 h-94 transform rotate-45 absolute opacity-0' src="/assets/images/bite-2.png" alt="" />
-<img ref={Container_Ref} className='w-48 h-94 transform rotate-45 absolute opacity-0' src="/assets/images/bite-3.png" alt="" />
+      <div className="contain-multiple-images w-full h-[60vh] relative top-24 z-0 flex items-center justify-center">
+<img className='st w-48 h-94 transform rotate-45 absolute' src="/assets/images/bite.png" alt="" />
+<img className='nd w-48 h-94 transform rotate-45 absolute opacity-0' src="/assets/images/bite-1.png" alt="" />
+<img className='rd w-48 h-94 transform rotate-45 absolute opacity-0' src="/assets/images/bite-2.png" alt="" />
+<img className='rth w-48 h-94 transform rotate-45 absolute opacity-0' src="/assets/images/bite-3.png" alt="" />
 
 
 <div className="contain-svgs w-full flex justify-center">
 
 
-  <svg className='absolute top-[36vw] right-[42vw] mt-5' width="118" height="39" viewBox="0 0 118 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <svg className='svg-1 absolute top-[26vw] right-[45vw] mt-5 opacity-0' width="118" height="39" viewBox="0 0 118 39" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path className="arrow-path arrow-1"
                 d="M0.5 11.2
                 C6.6 21 34.5 32.1 54 32.6
@@ -100,9 +159,10 @@ tl2.fromTo(Container_Ref.current,{
                 strokeLinejoin="round"
                 />
             </svg>
-<h2 className='transform translate-y-[9vw] translate-x-78 mt-3 text-2xl capitalize font-medium'>smooth</h2>
+<h2 className='h2-1-4
+ transform translate-y-[12vw] translate-x-70 mt-3 text-2xl capitalize font-medium opacity-0'>smooth</h2>
 
-<svg className='absolute left-[43vw] top-52 rotate-195' width="118" height="39" viewBox="0 0 118 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg className='svg-2 absolute left-[44vw] top-4 rotate-195 opacity-0' width="118" height="39" viewBox="0 0 118 39" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path className="arrow-path arrow-2"
                 d="M0.5 11.2
                 C6.6 21 34.5 32.1 54 32.6
@@ -128,9 +188,9 @@ tl2.fromTo(Container_Ref.current,{
                 strokeLinejoin="round"
                 />
             </svg>
- <h2 className='trasform -translate-y-40 -translate-x-20 text-2xl capitalize font-medium'>crunchy</h2>
+ <h2 className='h2-2-4 trasform -translate-y-40 -translate-x-20 text-2xl capitalize font-medium opacity-0'>crunchy</h2>
 
- <svg className='absolute top-[18vw] right-[30vw] mt-5' width="113" height="84" viewBox="0 0 113 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+ <svg className='svg-3 absolute top-[6vw] right-[30vw] mt-5 opacity-0' width="113" height="84" viewBox="0 0 113 84" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path className="arrow-path arrow-3"
                 d="M0 23.5
                 C9.8 17.3 40.1 19.9 57.9 28
@@ -156,10 +216,10 @@ tl2.fromTo(Container_Ref.current,{
                   strokeLinejoin="round"
                   />
             </svg>
-            <h2 className='trasform -translate-y-4 translate-x-68 text-2xl capitalize font-medium'>satisfying</h2>
+            <h2 className='h2-3-4 trasform -translate-y-4 translate-x-68 text-2xl capitalize font-medium opacity-0'>satisfying</h2>
 
 
- <svg className='absolute left-[29vw] top-[31.5vw] rotate-150' width="113" height="84" viewBox="0 0 113 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+ <svg className='svg-4 absolute left-[29vw] top-[18.5vw] rotate-150 opacity-0' width="113" height="84" viewBox="0 0 113 84" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path className="arrow-path arrow-4"
                 d="M0 23.5
                   C9.8 17.3 40.1 19.9 57.9 28
@@ -185,7 +245,7 @@ tl2.fromTo(Container_Ref.current,{
                   strokeLinejoin="round"
                   />
             </svg>
-       <h2 className='trasform translate-y-16 -translate-x-[32vw] text-2xl capitalize font-medium'>balanced</h2>     
+       <h2 className='h2-4-4 trasform translate-y-16 -translate-x-[32vw] text-2xl capitalize font-medium opacity-0'>balanced</h2>     
                   </div>
 
 {/* <h2>satisfying</h2>  */}

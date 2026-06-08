@@ -62,7 +62,7 @@ gsap.registerPlugin(ScrollTrigger)
 
   return (
     <>
-    <div className='cont-4 w-full bg-cyan-500 h-[110vh] flex flex-row  xl:flex lg:flex md:flex'>
+    <div className='cont-4 w-full bg-gray-500 h-[110vh] flex flex-row  xl:flex lg:flex md:flex'>
       <div className="left w-[50%] flex flex-col justify-between h-[70vh]">
         <h1 className='heading-1-4 text-[2cm] pl-5 ml-15 font-medium'>what goes into every bar of <span className='text-orange-600 uppercase'>Melt</span></h1>
         <p className='text-xl pl-5 ml-15 w-96'>Every bar is a result of careful sourcing, precise timing, and countless taste tests — all to make sure each bite feels intentional.</p>

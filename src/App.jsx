@@ -12,9 +12,9 @@ function App() {
 
   return (
     <>
-      <Navbar/>
-      {/* <Hero/> */}
-      {/* <Pitcure/> */}
+      {/* <Navbar/> */}
+      <Hero/>
+      <Pitcure/>
       <Showcase/>
       <Quality/>
       <Footer/>
