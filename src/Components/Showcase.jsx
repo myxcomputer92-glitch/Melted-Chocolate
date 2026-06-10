@@ -52,31 +52,46 @@ useGSAP(()=>{
 
 // })
 
+tl2.to('.st',{
+  opacity:1
+})
 
 tl2.to('.svg-1',{
     opacity:1,
-  duration:1,
+  duration:2,
 })
 
 tl2.to('.h2-1-4',{
     opacity:1,
-  duration:1,
+  duration:2,
+})
+
+// tl2.add('Same_time')
+
+tl2.to('.st',{
+  opacity:0,
+  duration:1.5
 })
 
 tl2.to('.nd',{
     opacity:1,
   duration:1,
 
-})
+},'<')
 
 tl2.to('.svg-2',{
     opacity:1,
-  duration:1,
+  duration:2,
 })
 
 tl2.to('.h2-2-4',{
     opacity:1,
-  duration:1,
+  duration:2,
+})
+
+tl2.to('.nd',{
+  opacity:0,
+  duration:1.5
 })
 
 
@@ -84,35 +99,45 @@ tl2.to('.rd',{
     opacity:1,
   duration:1,
 
-})
+},'<')
 
 tl2.to('.svg-3',{
     opacity:1,
-  duration:1,
+  duration:2,
 })
 
 tl2.to('.h2-3-4',{
     opacity:1,
-  duration:1,
+  duration:2,
 })
 
-tl2.to('.th',{
+tl2.to('.rd',{
+  opacity:0,
+  duration:1.5
+})
+
+
+tl2.to('.rth',{
     opacity:1,
   duration:1,
 
-})
+},'<')
 
 tl2.to('.svg-4',{
     opacity:1,
-  duration:1,
+  duration:2,
 })
 
 tl2.to('.h2-4-4',{
     opacity:1,
-  duration:1,
+  duration:2,
 })
 
 
+// tl2.to('.th',{
+//   opacity:0,
+//   duration:0.5
+// })
 
 
 })
@@ -120,7 +145,7 @@ tl2.to('.h2-4-4',{
 
   return (
     <>
-    <div ref={Container_Ref} className='cont-3 w-full h-screen relative flex flex-col items-center bg-lime-300 text-white'>
+    <div ref={Container_Ref} className='cont-3 w-full h-screen relative flex flex-col items-center text-black'>
       <h1 ref={heading_ref} className='text-6xl transform translate-y-14 text-black font-medium opacity-0 relative z-10'>Feel The Melt </h1>
       
       <div className="contain-multiple-images w-full h-[60vh] relative top-24 z-0 flex items-center justify-center">
@@ -188,7 +213,7 @@ tl2.to('.h2-4-4',{
                 strokeLinejoin="round"
                 />
             </svg>
- <h2 className='h2-2-4 trasform -translate-y-40 -translate-x-20 text-2xl capitalize font-medium opacity-0'>crunchy</h2>
+ <h2 className='h2-2-4 trasform -translate-y-46 -translate-x-20 text-2xl capitalize font-medium opacity-0'>crunchy</h2>
 
  <svg className='svg-3 absolute top-[6vw] right-[30vw] mt-5 opacity-0' width="113" height="84" viewBox="0 0 113 84" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path className="arrow-path arrow-3"

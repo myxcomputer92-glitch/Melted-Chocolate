@@ -3,7 +3,7 @@ import React from 'react'
 const Footer = () => {
   return (
     <>
-    <div className='cont-6 w-full h-[80vh] bg-orange-400 text-white'>
+    <div className='cont-6 w-full h-[80vh] bg-[#FF6B57] text-white'>
         <div className="parent flex pt-18">
 
       <div className="left w-[50%] h-[50vh] p-7 ">
@@ -20,31 +20,31 @@ const Footer = () => {
       <div className="right w-[50%] h-[50vh] p-7  flex flex-col justify-between items-center">
 <table className='flex justify-start gap-12'>
     
-    <thead>
-    <th>Explore</th>
+    <tbody>
+    <tr>Explore</tr>
     <tr className='flex flex-col'>
-        <td className='underline cursor-pointer p-px'>Flavor's</td>
-        <td className='underline cursor-pointer p-px'>Our story</td>
-        <td className='underline cursor-pointer p-px'>How its made</td>
-        <td className='underline cursor-pointer p-px'>Gifting</td>
+        <td className='cursor-pointer p-px hover:underline'>Flavor's</td>
+        <td className='cursor-pointer p-px hover:underline'>Our story</td>
+        <td className='cursor-pointer p-px hover:underline'>How its made</td>
+        <td className='cursor-pointer p-px hover:underline'>Gifting</td>
     </tr>
-    </thead>
+    </tbody>
 
-    <thead>
-    <th>Experience</th>
+    <tbody>
+    <tr><td>Experience</td></tr>
     <tr className='flex flex-col'>
-        <td className='underline cursor-pointer p-px'>Taste Journey</td>
-        <td className='underline cursor-pointer p-px'>Texture & Melt</td>
-        <td className='underline cursor-pointer p-px'>Ingredients</td>
-        <td className='underline cursor-pointer p-px'>Process</td>
+        <td className='cursor-pointer p-px hover:underline'>Taste Journey</td>
+        <td className='cursor-pointer p-px hover:underline'>Texture & Melt</td>
+        <td className='cursor-pointer p-px hover:underline'>Ingredients</td>
+        <td className='cursor-pointer p-px hover:underline'>Process</td>
     </tr>
-    </thead>
+    </tbody>
 
 </table>
 
 <div className="contain-img-text">
     <img src="" alt="" />
-    <h2 className='underline font-bold text-2xl'>Subscribe Newsletter</h2>
+    <h2 className='underline font-bold text-2xl hover:cursor-pointer'>Subscribe Newsletter</h2>
 </div>
 
       </div>
