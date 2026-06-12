@@ -22,20 +22,21 @@ const tl2=gsap.timeline({scrollTrigger:{
 }})
 
 
-  tl.fromTo(Main_Heading.current,{
+  tl.fromTo(Main_Heading.current.querySelectorAll("span"),{
     opacity:0,
     // duration:0.6,
     // x:2,
     scale:1.4
   },{
+    stagger:0.1,
     opacity:1,
     x:2,
     scale:1,
-    duration:1
+    duration:0.6
   })
   tl.from('.heading-2-2',{
     opacity:0,
-    duration:1,
+    duration:0.6,
     y:'2vw',
   })
 
@@ -45,7 +46,7 @@ const tl2=gsap.timeline({scrollTrigger:{
   },{
     opacity:1,
     scale:1,
-    duration:1,
+    duration:0.7,
     y:-5
   })
 
@@ -54,30 +55,60 @@ const tl2=gsap.timeline({scrollTrigger:{
 
 tl2.to('.same-images',{
 duration:1,
-y:1460,
+y:1410,
+scale:0.6,
+},'sad')
+
+tl2.to('.no-1-img',{
+duration:1,
+y:1410,
+x:-40,
+scale:0.6,
+},'sad')
+
+tl2.to('.no-2-img',{
+duration:1,
+y:1476,
+x:-8,
 scale:0.6,
 },'sad')
 
 tl2.to('.no-3-img',{
 duration:1,
-y:1460,
-x:25,
+y:1476,
+x:-8,
 scale:0.6,
 },'sad')
-
 
 tl2.to('.no-4-img',{
 duration:1,
-y:1460,
-x:42,
+y:1410,
+x:28,
 scale:0.6,
 },'sad')
 
-tl2.to('.dark-cocoa,.orange',{
-duration:1,
-y:1500,
-scale:0.6
-},'sad')
+
+// tl2.to('.no-3-img',{
+// duration:1,
+// y:1420,
+// x:25,
+// scale:0.6,
+// },'sad')
+
+
+
+// tl2.to('.no-4-img',{
+// duration:1,
+// y:1410,
+// x:42,
+// scale:0.6,
+// },'sad')
+
+// tl2.to('.dark-cocoa,.orange',{
+// duration:1,
+// y:1490,
+// scale:0.6
+// },'sad')
 
 const cards=Array.from(cardParent.current.children)
 
@@ -93,7 +124,7 @@ card.addEventListener('mouseenter',()=>{
 
   gsap.to(mainImages[img],{
     opacity:0,
-  })
+  },'sad')
 
   gsap.to(heading,{
     opacity:1,
@@ -105,14 +136,14 @@ card.addEventListener('mouseenter',()=>{
     opacity:1,
     y:-20,
     duration:0.4
-  })
+  },'sad')
 })
 
 card.addEventListener('mouseleave',()=>{
 
   gsap.to(mainImages[img],{
     opacity:1,
-  })
+  },'sad')
 
   gsap.to(heading,{
     opacity:0,
@@ -123,7 +154,7 @@ card.addEventListener('mouseleave',()=>{
     opacity:0,
     y:0,
     duration:0.4
-  })
+  },'sad')
 })
 
 
@@ -137,14 +168,6 @@ const aladin=()=>{
 
 
 
-
-
-
-
-
-
-
-
 })
 
 
@@ -155,7 +178,19 @@ const aladin=()=>{
       <div className="cont-2 relative w-full h-[300vh] flex flex-col justify-between">
         <div className="contain-text flex flex-col items-center justify-center pt-15">
           <h1 ref={Main_Heading} className="text-amber-900 text-8xl font-bold">
-            Four <span className="text-orange-500">Flavors.</span>
+            <span>F</span>
+            <span>o</span>
+            <span>u</span>
+            <span>r</span>
+            &nbsp;
+            <span className="text-orange-500">F</span>
+            <span className="text-orange-500">l</span>
+            <span className="text-orange-500">a</span>
+            <span className="text-orange-500">v</span>
+            <span className="text-orange-500">o</span>
+            <span className="text-orange-500">r</span>
+            <span className="text-orange-500">s</span> 
+            {/* <span className="text-orange-500">Flavors.</span> */}
           </h1>
           <h1 className="heading-2-2 text-amber-900 text-5xl pt-6 font-medium">One Perfect Melt.</h1>
           <img

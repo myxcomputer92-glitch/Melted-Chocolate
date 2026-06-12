@@ -31,7 +31,7 @@ useGSAP(()=>{
 
   const tl2=gsap.timeline({scrollTrigger:{
     trigger:Container_Ref.current,
-    markers:true,
+    // markers:true,
     start:'top top',
     end:'+=800',
     scrub:true,
