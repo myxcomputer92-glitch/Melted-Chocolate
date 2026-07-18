@@ -76,8 +76,8 @@ const Footer = () => {
       <div className="bottom flex justify-between items-center p-3  h-[20vh]">
 <h3>Design by <span className='underline'>Rupz Web</span></h3>
 <div className="last flex gap-4">
-<h3>Privacy Policy</h3>
-<h3>Terms & condition</h3>
+<h3 className='cursor-pointer hover:underline'>Privacy Policy</h3>
+<h3 className='cursor-pointer hover:underline'>Terms & condition</h3>
 </div>
       </div>
     </div>
